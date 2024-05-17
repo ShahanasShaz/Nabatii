@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/images/nabachooc.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Nabati</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#543228',
+                        secondary: '#f8efdc',
+                        light: '#fbf8f1',
+                        text: '#331b15',
+                        red: '#ed1b24'
+                    },
+                    spacing: {
+                        '35px': '50px',
+                    },
+                    backgroundImage: {
+                        'banner': "url('images/nabachooc.jpg')",
+                    },
+                    spacing: {
+                        '500': '542px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!------------- class="bg-orange-900" ---------------->
+    <header class="bg-primary text-light sticky	" id="home">
+        <div
+            class="container max-w-7xl  mx-auto 2xl:px-0 md:px-10 px-5 md:py-3 py-1.5 flex justify-between items-center">
+            <a href="#"><img src="images/nabati-logo-486792A275-seeklogo.com.png" alt="logo"
+                    class="md:h-14 h-12 w-auto"></a>
+            <nav class="md:font-2xl sm:font-xs">
+                <a href="#" class="pr-2 hover:text-red">Home</a>
+                <a href="#about" class="pr-2 hover:text-red">About</a>
+                <a href="#products" class="pr-2 hover:text-red">Products</a>
+                <a href="#contacts" class="pr-2 hover:text-red">Contacts</a>
+            </nav>
+        </div>
+    </header>
+    <!-- -------------------banner---------------------------- -->
+    <section class="bg-banner bg-no-repeat bg-fixed bg-center bg-cover">
+        <div
+            class="container max-w-7xl  mx-auto 2xl:px-0 md:px-10 px-5 md:py-32 py-20 flex justify-between md:flex-nowrap	flex-wrap md:text-left text-center">  
+            <div class="md:w-3/6 w-full"></div>
+            <div class="md:w-3/6 w-full"  data-aos="fade-up"
+            data-aos-duration="3000">
+                <h1 class="font-serif text-light lg:text-9xl md:text-8xl text-5xl font-bold">nabati</h1>
+                <p class="font-normal pb-5 text-light md:px-0 px-10 font-sans">Corporate Office in Kilpauk
+                    Open today until 6:00PM</p>
+                <a href="#contacts"
+                    class=" hover:bg-red hover:text-light bg-light md:py-2.5 md:px-5 py-1 px-2 text-primary font-bold md:text-base ">CONTACT
+                    US</a>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------about--------------------------------->
+    <section class="bg-light" id="about">
+        <div class="container max-w-7xl  mx-auto 2xl:px-0 md:px-10 md:py-10 px-5 py-5">
+            <h2 class="text-center font-bold md:text-4xl text-2xl text-primary font-sans md:pb-8 pb:4">ABOUT</h2>
+            <div>
+                <div class="flex justify-center justify-items-center " data-aos="zoom-out-up"   data-aos-duration="3000">
+                    <img src="images/about.png" alt="nabati" class="p-12">
+                </div>
+                <div class="md:px-36 px-5">
+                <p class="md:px-24  text-center text-text inline">Nabati Group is a business group that has a business
+                    focus in
+                    the field of fast moving consumer goods (FMCG), especially food and soft drinks. The company, which
+                    was founded in 2002, was initially only engaged in the snack food business with a home industry
+                    scale.<span class="hidden" id="readMoreContent"><br>
+                        Along with innovation and business development carried out in a modern and professional manner,
+                        now
+                        Nabati Group has become a company that has a broad business scope business such as Industry
+                        FMCG.
+                        Nabati Group has a number business and partners name is PT Kaldu Sari Nabati Indonesia, Richeese
+                        Kuliner Indonesia, Pinus Merah Abadi, Nutribev Sinergy Indonesia,Kieber.</span>                
+                        <button class="readmore_btn text-orange-300 cursor-pointer" onclick="readmore()">ReadMore</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- -----------------------------products------------------------------>
+    <section class="bg-light" id="products">
+        <div class="container max-w-7xl  mx-auto 2xl:px-0 md:px-10 md:py-10 px-5 py-9 ">
+            <h2 class="text-center font-bold md:text-4xl text-2xl text-primary font-sans md:pb-10 pb-5 ">
+                PRODUCTS
+            </h2>
+            <div class=" flex justify-center gap-10 flex-wrap">
+                <div class="h-auto w-80 p-10 bg-secondary " data-aos="zoom-out-down"  data-aos-duration="2000">
+                    <img src="images/richoo.png" alt="nabati" class="hover:scale-75">
+                    <h3 class="font-sans font-semibold text-center pt-4 text-xl text-text hover:text-red">Richoco</h3>
+                </div>
+                <div class="h-auto w-80 p-10  bg-secondary" data-aos="zoom-out-down"  data-aos-duration="2000">
+                    <img src="images/cheese 1.png" alt="nabati" class="hover:scale-75">
+                    <h3 class="font-sans font-semibold text-center pt-4 text-xl  text-text hover:text-red">Richeese</h3>
+                </div>
+                <div class=" h-auto w-80 p-10  bg-secondary" data-aos="zoom-out-down"  data-aos-duration="2000">
+                    <img src="images/cocolava.jpg" alt="nabati" class="hover:scale-75">
+                    <h3 class="font-sans font-semibold text-center pt-4 text-xl  text-text hover:text-red">CocoLava</h3>
+                </div>
+                <div class="h-auto w-80 p-10  bg-secondary" data-aos="zoom-out-down"  data-aos-duration="2000">
+                    <img src="images/npink.png" alt="nabati" class="hover:scale-75">
+                    <h3 class="font-sans font-semibold text-center pt-4 text-xl  text-text hover:text-red">pink lava
+                    </h3>
+                </div>
+                <div class="h-auto w-80 p-10  bg-secondary" data-aos="zoom-out-down"  data-aos-duration="2000">
+                    <img src="images/white 1.png" alt="nabati" class="hover:scale-75">
+                    <h3 class="font-sans font-semibold text-center pt-4 text-xl  text-text hover:text-red">White</h3>
+                </div>
+                <div class="h-auto w-80 p-10  bg-secondary" data-aos="zoom-out-down"  data-aos-duration="2000">
+                    <img src="images/raspberry yogurt.jpg" alt="nabati" class="hover:scale-75">
+                    <h3 class="font-sans font-semibold text-center pt-4 text-xl  text-text hover:text-red">Rashberry
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------contacts------------------------- -->
+    <section class="bg-light" id="contacts">
+        <div class="container max-w-7xl  mx-auto 2xl:px-0 md:px-10 md:py-10 px-5 py-9">
+            <h2 class="text-center font-bold md:text-4xl text-2xl text-primary font-sans md:pb-10 pb-7">
+                CONTACTS
+            </h2>
+            <div class=" flex justify-center gap-10 flex-wrap  text-text">
+                <div class="h-auto w-80 p-10 border-2 border-orange-100 text-center">
+
+                    <div class="flex justify-center"> <img src="images/PHONE.png" alt="CALL"
+                            class="md:h-9 h-6 w-auto hover:scale-125"></div>
+                    <h3 class="md:pt-10 pt-5 font-bold">MOBILE | WHATSAPP</h3>
+                    <P>+91 7397 748 920</P>
+                </div>
+                <div class="h-auto w-80 p-10 border-2 border-orange-100 text-center">
+                    <div class="flex justify-center"> <img src="images/MAIL.png" alt="CALL"
+                            class="md:h-9 h-6 w-auto hover:scale-125"></div>
+                    <h3 class="md:pt-10 pt-5 font-bold">SEND US AN EMAIL</h3>
+                    <P>nabati@gamil.com</P>
+                </div>
+                <div class="h-auto w-80 p-10 border-2 border-orange-100 text-center">
+                    <div class="flex justify-center"><img src="images/time.png" alt="CALL"
+                            class="md:h-9 h-6 w-auto hover:scale-125"></div>
+                    <h3 class="md:pt-10 pt-5 font-bold">TIME</h3>
+                    <P>Mon - Sat</p>
+                    <p>9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+            <div class="flex justify-center gap-10 flex-wrap pt-10 text-center pb-10">
+                <div class="p-10 border-2 border-orange-100">
+                    <div class="flex justify-center"><img src="images/LOCATION.png" alt="CALL"
+                            class="md:h-9 h-6 w-auto hover:scale-125">
+                    </div>
+                    <h3 class="pt-5 font-bold">LOCATION</h3>
+                    <P>Bank Street Kilpauk Chennai, Tamil Nadu 600010 India</P>
+                </div>
+                <div>
+                    <iframe class="h-60 md:w-500"
+                        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7772.523464686243!2d80.2504410841532!3d13.082591749388598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d13.0859157!2d80.25569019999999!4m5!1s0x3a52667f87fada93%3A0x720443746ac11725!2sNabati%20(Enerlife%20India%20Pvt%20Ltd)!3m2!1d13.079574899999999!2d80.2570698!5e0!3m2!1sen!2sin!4v1706775531503!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------footer------------ -->
+    <footer class="bg-primary text-light md:px-10 md:pt-10 md:pb-1.5 px-5 pt-5 pb-1">
+        <div class=" flex justify-center"><a href="#"><img src="images/nabati-logo-486792A275-seeklogo.com.png" alt=""
+                    class="md:h-14 h-12 w-auto flex items-center pb-4 hover:scale-125"></a></div>
+        <div class="text-light md:px-10 px-4 font-sans text-center pb-2.5 md:text-base text-xs">Nabati Richoco wafer is
+            the perfect wafer for
+            chocolate lovers. It gets crunchier and creamier with every bite.</div>
+        <nav class="pb-8 md:font-sm font-xs flex justify-center md:font-semi-bold	">
+            <a href="#home" class="pr-4 hover:text-red">Home</a>
+            <a href="#about" class="pr-4 hover:text-red">About</a>
+            <a href="#products" class="pr-4 hover:text-red">Products</a>
+            <a href="#contacts" class="pr-4 hover:text-red">Contacts</a>
+        </nav>
+        <!-- ---------------------------------------------- -->
+        <div class="border border-white	"></div>
+        <div class="flex justify-between font-xs md:pt-2 pt-1 text-light">
+            <div>&copy 2024 nabti.All right reserved</div>
+            <div class="flex">
+                <a href="https://www.instagram.com/"><img src="images/instagram 1.png" alt="instagram"
+                        class="p-2 md:h-9 h-7 w-auto"></a>
+                <a href="https://web.whatsapp.com/"><img src="images/watsapp.png" alt="whatsapp"
+                        class="p-2 md:h-9 h-7 w-auto"></a>
+                <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"
+                        class="p-2 md:h-9  h-7 w-auto"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/script/script.js"></script>
+
+    <!--__________________________________________________js____________________________________________ -->
+    <script>
+        function readmore() {
+            var content = document.getElementById('readMoreContent');
+            var btn = document.getElementsByClassName('readmore_btn')[0];
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                btn.innerHTML = 'Read Less';
+            } else {
+                content.style.display = 'none';
+                btn.innerHTML = 'Read More';
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+
+</html>
